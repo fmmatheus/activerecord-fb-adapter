@@ -19,5 +19,5 @@ else
       !data['prerelease'] && major == a && (minor.nil? || minor == b)
     end.first['number']
   end
-  gem 'rails', git: "git://github.com/rails/rails.git", tag: "v#{version}"
+  gem 'rails', git: "https://github.com/rails/rails.git", tag: "v#{version}"
 end
