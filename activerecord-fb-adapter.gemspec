@@ -15,8 +15,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'fb', '>= 0.7.4'
   s.add_dependency 'activerecord', '>= 3.2.0'
 
-  s.add_development_dependency 'mocha'
-  s.add_development_dependency 'pry-byebug'
-  s.add_development_dependency 'minitest-spec-rails'
-  s.add_development_dependency 'minitest-reporters'
+  s.add_development_dependency 'mocha', '1.2.1'
+  s.add_development_dependency 'pry-byebug', '>= 3.4.2'
+  s.add_development_dependency 'minitest-spec-rails', '>= 5.4.0'
+  s.add_development_dependency 'minitest-reporters', '>= 1.1.14'
 end
