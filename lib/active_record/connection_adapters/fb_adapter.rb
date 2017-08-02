@@ -137,6 +137,7 @@ module ActiveRecord
 
       def self.boolean_domain=(domain)
         FbColumn::TRUE_VALUES << domain[:true]
+        FbColumn::FALSE_VALUES << domain[:false]
         @@boolean_domain = domain
       end
 
