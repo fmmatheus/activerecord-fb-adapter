@@ -21,6 +21,7 @@ module ActiveRecord
 
           sql_type << ' sub_type text' if sql_type =~ /blob/ && sub_type == 1
           sql_type = 'boolean' if domain =~ %r(#{boolean_domain[:name]})i
+          sql_type = 'boolean' if sql_type =~ /char/ && field[:limit] == 1
           sql_type
         end
       end
